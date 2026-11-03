@@ -1,0 +1,5 @@
+# .dockerignore 로 이름을 바꿔 사용
+harness/
+.git/
+__pycache__/
+*.pyc

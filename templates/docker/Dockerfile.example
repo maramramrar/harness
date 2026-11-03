@@ -1,0 +1,10 @@
+# Python 웹 앱용 예시. 과제 구조에 맞게 파일명과 실행 명령을 바꾼다.
+FROM python:3.12-slim
+WORKDIR /app
+# 외부 패키지가 있을 때만 사용 (requirements.txt가 없으면 두 줄 삭제)
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+EXPOSE 8000
+# 서버는 반드시 0.0.0.0에 바인딩해야 컨테이너 밖에서 접속된다
+CMD ["python", "server.py"]

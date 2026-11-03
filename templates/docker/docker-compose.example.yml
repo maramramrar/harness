@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"   # 호스트포트:컨테이너포트
+    # 데이터를 이미지에 넣지 않고 연결하려면:
+    # volumes:
+    #   - ./data:/app/data:ro
