@@ -1,7 +1,7 @@
 # 사용법
 
 0. 아무것도 바꾸기 전에 처음 상태 기록: `git log`로 이미 저장소인지 확인
-   - 저장소가 아니면 `git init` → `git add .` → `git commit -m "task baseline"` (과제가 준 파일만 담긴 기준점)
+   - 저장소가 아니면 `git init` → `git status`로 예상 밖의 큰 생성물이 없는지 확인 → `git add .` → `git commit -m "task baseline"` (과제가 준 파일만 담긴 기준점)
    - 이미 저장소면 기존 첫 커밋이 기준점
 
 1. 작업 폴더 안에 clone: `git clone https://github.com/maramramrar/harness`
@@ -57,7 +57,7 @@ AGENTS.md를 읽고 규칙을 3줄로 요약해줘. harness 폴더는 내 작업
 
 8. 적대적 리뷰 (핵심 완성 후, 제출 전): 새 세션(새 터미널에서 codex, 또는 /new)에 harness/templates/REVIEW_PROMPT.md를 붙여넣는다. 처리 순서: [필수] 요구사항 위반·재현되는 오류는 수정 / [위험] 증거가 약한 잠재 위험은 확인 후 판단 / [선택] 취향·선택 기능은 시간이 없으면 보류.
 
-9. 140분쯤: 구현을 멈추고 세 기록 파일의 빈 곳을 확인한 뒤 제출 문서 작성을 지시한다.
+9. 140분 체크포인트: 핵심 기능이 동작하면 구현을 멈추고 문서로 넘어간다. 핵심이 아직 안 되면 그것만 마무리하되, 늦어도 155분에는 문서를 시작한다. 세 기록 파일의 빈 곳을 확인한 뒤 제출 문서 작성을 지시한다.
 ```
 README에서 제출 문서의 파일명과 양식을 확인해. 지정된 양식이 있으면 그대로 따르고,
 없으면 harness/templates/SUBMISSION.md의 목차 구조를 써.
